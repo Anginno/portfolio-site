@@ -1,0 +1,394 @@
+body {
+    font-family: -apple-system, Montserrat, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif !important;
+    background-color: #0B0808 !important;
+}
+
+#root {
+    color: white;
+}
+
+header {
+    margin-top: 30px;
+}
+
+p {
+    font-size: 1.2rem; 
+}
+
+/* Utility classes */
+
+.white-text {
+    color: white;
+}
+
+.grey-text {
+    color: #64646F;
+}
+
+/* End of Utility */
+
+/* Nav bar */
+
+nav {
+    position: relative;
+}
+
+.nav-logo {
+    top: 30px;
+}
+
+.nav-list {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    float: right;
+}
+
+/* Nav scrolling effect */
+.nav-item {
+    position: relative;
+    height: 50px;
+    width: 120px;
+    overflow: hidden;
+}
+
+.nav-item span {
+    position: absolute;
+    display: block;
+    transition: 0.3s;
+    font-size: 2rem;
+    margin-top: 5px;
+}
+
+.item1 {
+    top: 40px;
+}
+
+.item2 {
+    top: 0px;
+}
+/* End of Nav scrolling effect */
+
+/* End of Nav */
+
+/* Hero Section */
+.hero-section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.header-title {
+    font-weight: 600;
+    font-size: 4rem;
+    position: absolute;
+    bottom: 0px;
+}
+
+.header-wrapper {
+    position: absolute;
+    bottom: 130px;
+    width: 100%;
+}
+
+.mask-container {
+    overflow: hidden;
+    height: 90px;
+    width: 100%;
+    position: relative;
+}
+
+/* End of hero section */
+
+/* Selected works section */
+
+.work-link .item1 {
+    display: none;
+}
+
+.work-link span {
+    font-size: 1.3rem;
+}
+
+.work-image-wrapper {
+    width: 100%;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.work-image {
+    width: 100%;
+    height: 100%;
+}
+
+/* end of selected works section */
+
+/* individual work page section */
+.work-blurb-container {
+    margin-top: 50px;
+}
+
+.work-detail {
+    margin-bottom: 50px;
+    margin-top: -50px;
+    font-size: 1.5rem;
+}
+
+.work-description {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+
+/* About page */
+
+    .about-section {
+        margin-top: 150px;
+        margin-bottom: 80px;
+    }
+
+    .about-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+/* End of about page */
+
+/* Footer */
+.top-border {
+    border-top: 1px solid #64646F;
+}
+
+.footer-links {
+    list-style: none;
+    margin-left: 0;
+    padding: 0;
+}
+
+.footer-item {
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.footer-item:hover {
+    color: white;
+}
+/* End of footer */
+
+/* ------------------- media queries ---------------------- */
+
+/*Media queries for screen size or smaller */
+
+/* Extra small devices*/
+@media (max-width: 575px) {
+
+    .sub-title {
+        font-size: 1.3rem;
+    }
+
+    /* hero header title */
+    .header-title {
+        font-size: 1.8rem;
+    }
+
+    .mask-container {
+        height: 50px;
+    }
+
+    .header-sub-title {
+        font-size: 1.3rem;
+    }
+
+    .minor-title {
+        font-size: 1rem;
+    }
+
+    /*Footer links*/
+    .footer-item {
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    /* work links in home page */
+    .work-link .item2{
+        font-size: 1.2rem;
+    }
+}
+
+/* Small devices*/
+@media (max-width: 767px) {
+
+}
+
+/* Medium devices*/
+@media (max-width: 991px) {
+    /* hero header title */
+    .header-wrapper {
+        width: 80vw;
+    }
+
+    /* work links in home page */
+    .work-link {
+        margin-top: 20px;
+    }
+}
+
+/* Large devices*/
+@media (max-width: 1199px) {
+
+}
+
+/* Media queries for screen size or larger */
+
+/*Small devices*/
+@media (min-width: 544px) {
+    /* hero header title */
+    .header-title {
+        font-size: 3.15rem;
+    }
+
+    .mask-container {
+        height: 70px;
+    }
+
+    .header-sub-title {
+        font-size: 1.5rem;
+    }
+
+    .minor-title {
+        font-size: 1rem;
+    }
+
+    /*Footer links*/
+    .footer-item {
+        font-weight: 600;
+        font-size: 3rem;
+    }
+
+}
+
+/*Medium devices*/
+@media (min-width: 768px) {
+    /* nav bar */
+    .nav-list {
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 50px;
+    }
+
+    /* hero header title */
+    .header-title {
+        font-size: 4rem;
+    }
+
+    .mask-container {
+        height: 70px;
+    }
+
+    .header-sub-title {
+        font-size: 2rem;
+    }
+
+    .minor-title {
+        font-size: 1.5rem;
+    }
+
+    /* work content in the home page grid */
+    .work-content-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 5%;
+    }
+
+    /* work page */
+    .work-description {
+        margin-top: 80px;
+        margin-bottom: 100px;
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+
+    .work-detail {
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+
+    p {
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+}
+
+/*Large devices*/
+@media (min-width: 992px) {
+
+    .sub-title {
+        font-size: 2rem;
+    }
+
+    /* Nav bar effect */
+    .nav-item:hover .item1 {
+        top: 0px;
+    }
+    
+    .nav-item:hover .item2 {
+        top: -70px;
+    }
+
+    /* Work section nav effect */
+    .work-link{
+        position: relative;
+        height: 75px;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .work-link span {
+        position: absolute;
+        display: block;
+        transition: 0.3s;
+        font-size: 1.6rem;
+        margin-top: 5px;
+    }
+
+    .work-link:hover .item1 {
+        top: 0px;
+    }
+    
+    .work-link:hover .item2 {
+        top: -80px;
+    }
+
+    .work-link .item1 {
+        display: block;
+        top: 80px;
+    }
+    
+    .work-link .item2 {
+        top: 0px;
+    }
+}
+
+/*Extra large devices*/
+@media (min-width: 1200px) {
+    /* hero header title */
+    .header-title {
+        font-size: 5.8rem;
+    }
+
+    .mask-container {
+        height: 110px;
+    }
+
+    .header-sub-title {
+        font-size: 3rem;
+    }
+
+    .minor-title {
+        font-size: 1.8rem;
+    }
+}
