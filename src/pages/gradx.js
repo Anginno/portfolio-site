@@ -91,7 +91,7 @@ const GradX = () => {
                 {/* image container */}
                 <div className="row mb-5">
                     <div className="col-12 col-md-8 overflow-hidden">
-                        <img className="w-100 h-100" src="/images/gradx/1.jpg" alt="planning phase image" />
+                        <img className="w-100 h-100" src="/images/gradx/1.jpg" alt="planning phase" />
                     </div>
                     <div className="col-12 col-md-4"></div>
                 </div>
